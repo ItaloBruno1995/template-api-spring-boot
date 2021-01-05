@@ -84,8 +84,8 @@ public class AlunoController {
 
 			if (alunoAtual.isPresent()) {
 				Aluno _aluno = alunoAtual.get();
-				_aluno.setNome(aluno.getNome());
-				_aluno.setTelefone(aluno.getTelefone());
+				_aluno.setAluNome(aluno.getAluNome());
+				_aluno.setAluCPF(aluno.getAluCPF());
 				return new ResponseEntity<>(alunoBO.save(_aluno), HttpStatus.OK);
 			} else {
 				return new ResponseEntity<>(HttpStatus.NOT_FOUND);
