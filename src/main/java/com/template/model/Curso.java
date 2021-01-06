@@ -23,7 +23,7 @@ public class Curso {
 	@Column(name="id_curso")
     private long curCodCurso;
     
-    @Column
+    @Column(name="")
     @ApiModelProperty(notes = "Nome do curso")
     private String curNomeCurso;
     
